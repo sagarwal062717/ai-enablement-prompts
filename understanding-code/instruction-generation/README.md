@@ -29,6 +29,7 @@ You are assisting with generating a {final_output_file} file using a multi-step 
     - 2-general-guidelines.md
     - 3-file-structure-and-patterns.md
     - 4-contribution-guidelines.md
+    - 5-build-instructions.md
 6. For each step, output results into a corresponding `{output_folder}/` folder.
     - Mirror the step’s filename e.g., `1-determine-context.md` > `{output_folder}/1-determine-context.md`.
 
@@ -70,5 +71,8 @@ When given an {output_folder}, the AI agent will perform the following steps, re
     - Mapping out file structure and pattern
 - [./4-contribution-guidelines.md](./4-contribution-guidelines.md)
     - Generates style guidelines and coding standards based on existing code patterns
+- [./5-build-instructions.md](./5-build-instructions.md)
+    - Build instructions file
+
 
 Each prompt should be provided with the {output_folder} parameter to ensure consistent output location.
