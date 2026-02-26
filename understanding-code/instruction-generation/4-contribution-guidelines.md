@@ -10,3 +10,5 @@
   - Testing and review expectations
 - Reference any automation or CI requirements.
 - Add all your findings to ./{output-folder}/4-contribution-guidelines.md
+- Once completed read ./5-build-instructions.md and continue on accordingly with {output-folder} as the output-folder
+
