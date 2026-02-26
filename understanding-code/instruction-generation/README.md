@@ -14,12 +14,21 @@ The final output, `{final_output_file}.md` (the name of this file is a parameter
 To use this prompt chain, write something similar to the following in your agent, be sure to modify the parameters at the top accordingly:
 
 ```
+---
+name: generate-instructions
+description: Prompt to generate github co-pilot instructions
+agent: agent
+model: Claude Opus 4.6 (copilot)
+tools: [web/fetch]
+---
+
+
 {output_folder} = .results
 {final_output_file} = /.github/copilot-instructions.md
 
 You are assisting with generating a {final_output_file} file using a multi-step prompt chain.
 
-1. Open this repository on GitHub: https://github.com/sagarwal062717/ai-enablement-prompts
+1. Open this repository on GitHub with #fetch https://github.com/sheetal2211/ai-enablement-prompts
 2. Navigate to the `/understanding-code/instruction-generation` folder within the repo.
 3. Review all the prompt files in this folder WITHOUT executing them. 
     - This will help you understand the full scope of the prompt chain.
@@ -76,3 +85,4 @@ When given an {output_folder}, the AI agent will perform the following steps, re
 
 
 Each prompt should be provided with the {output_folder} parameter to ensure consistent output location.
+
